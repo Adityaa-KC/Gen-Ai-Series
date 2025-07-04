@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Tutor - AI Chatbot</title>
+    <!-- The path /static/style.css is now correct because of our app.py update -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <!-- ===== LANDING PAGE CONTENT (Will be hidden after launch) ===== -->
+    <div id="landing-page">
+        <header>
+            <nav class="nav-left">
+                <a href="#home" class="nav-link active">//01. <Home/></a>
+            </nav>
+            <div class="logo">Coder Army</div>
+        </header>
+        <main>
+            <section class="hero">
+                <img src="https://cdn.dnaindia.com/sites/default/files/2023/05/09/2588863-untitled-design-2023-05-09t173334.095.jpg?im=FitAndFill=(1200,900)" height="200" style="width:200px; height:200px; object-fit:cover; border-radius:50%; display:block; margin:100 auto;">
+                <h1><p class="mono glow">This is</p></h1>
+                <h1 class="blocky glow">Rohit Negi</h1>
+                <p class="mono tagline glow">Your Personal AI Tutor</p>
+                <!-- NEW SVG WITH FILLED-IN "CLARIFIED" LOOK -->
+<svg class="cta-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- The main eye shape, now filled with the accent color -->
+    <ellipse cx="24" cy="24" rx="18" ry="14" fill="#0fff0"/>
+    <!-- The pupil, now filled with the dark background color for contrast -->
+    <path d="M16 24c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8-8-3.582-8-8zm8 2a2 2 0 100-4 2 2 0 000 4z" fill="#0a0a0a"/>
+</svg>
+            </section>
+            <aside class="cta-aside">
+                <a href="#" class="cta-circle" id="launch-cta">
+                    <div class="orbit-circles">
+                        <div class="orbit-dot dot1"></div>
+                        <div class="orbit-dot dot2"></div>
+                        <div class="orbit-dot dot3"></div>
+                        <div class="orbit-dot dot4"></div>
+                        <div class="orbit-dot dot5"></div>
+                        <svg class="cta-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="24" cy="24" rx="18" ry="14" stroke="#0fff9c" stroke-width="2"/>
+                            <path d="M16 24c0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8-8-3.582-8-8zm8 2a2 2 0 100-4 2 2 0 000 4z" fill="#00ff9c"/>
+                        </svg>
+                        <span class="cta-text mono"><Launch Chatbot/></span>
+                    </div>
+                </a>
+            </aside>
+        </main>
+    </div>
+    <!-- ===== END OF LANDING PAGE CONTENT ===== -->
+
+
+    <!-- ===== CHAT INTERFACE (Initially hidden) ===== -->
+    <div id="chat-container" class="hidden">
+        <div id="chat-header">
+            <button id="back-btn">Back</button>
+            <div class="logo">Hello Baalko !!</div>
+        </div>
+        <div id="chat-window">
+            <div id="chat-messages"></div>
+        </div>
+        <div id="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-btn">SEND !!</button>
+        </div>
+    </div>
+    <!-- ===== END OF CHAT INTERFACE ===== -->
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
